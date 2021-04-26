@@ -1,0 +1,55 @@
+{
+  "configurations" : [
+    {
+      "id" : "C3C22F98-8090-4CD0-B820-8AC6E78DAC31",
+      "name" : "Address Sanitizer",
+      "options" : {
+        "addressSanitizer" : {
+          "enabled" : true
+        },
+        "threadSanitizerEnabled" : false,
+        "undefinedBehaviorSanitizerEnabled" : true
+      }
+    },
+    {
+      "id" : "5C0E7851-2749-4125-81EF-D40BF1FCFFD4",
+      "name" : "Thread Sanitizer",
+      "options" : {
+        "threadSanitizerEnabled" : true
+      }
+    },
+    {
+      "id" : "443BB1F0-B1A6-4842-8181-C9436347F581",
+      "name" : "Memory Management",
+      "options" : {
+        "guardMallocEnabled" : true,
+        "mallocGuardEdgesEnabled" : true,
+        "mallocScribbleEnabled" : true,
+        "mallocStackLoggingOptions" : {
+          "loggingType" : "allAllocations"
+        },
+        "nsZombieEnabled" : true
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:RomanNumerals.xcodeproj",
+        "identifier" : "DA4FD8A6260A98BC00179DD6",
+        "name" : "RomanNumeralsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:RomanNumerals.xcodeproj",
+        "identifier" : "DA4FD8B1260A98BC00179DD6",
+        "name" : "RomanNumeralsUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
